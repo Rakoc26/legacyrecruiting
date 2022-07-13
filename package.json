@@ -1,0 +1,23 @@
+{
+  "name": "legacy-recruiting",
+  "version": "1.0.0",
+  "description": "Landing page for legacy recruiting",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
+    "prefix:css": "postcss --use autoprefix -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css"
+  },
+  "author": "Nikola Rakočević",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefix": "^1.0.1",
+    "concat": "^1.0.3",
+    "node-sass": "^7.0.1",
+    "postcss-cli": "^10.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}

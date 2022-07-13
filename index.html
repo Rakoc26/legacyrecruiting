@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/b20d0d62d5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="nav__bar">
+      <img id="nav__bar-logo" src="img/logo.png" alt="" />
+      <ul class="nav__bar-list">
+        <li class="nav__bar-list__item">Home</li>
+        <li class="nav__bar-list__item">About Us</li>
+        <li class="nav__bar-list__item">Form</li>
+        <li class="nav__bar-list__item">Testimonials</li>
+        <li class="nav__bar-list__item">Contact</li>
+      </ul>
+    </div>
+
+    <img class="logo-small" src="img/logo.png" alt="" />
+
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+    <label for="navi-toggle" class="navigation__button">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
+
+    <div class="navigation__background">&nbsp;</div>
+    <div class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link"> Home</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link"> About Us</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link"> Form</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link"> Testimonials</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link"> Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <header class="header__main">
+      <span class="header__main-text">Join our team</span>
+      <button class="btn btn__main"><a href="#">Apply Now</a></button>
+
+      <h1 class="name__company">Legacy</h1>
+    </header>
+
+    <section class="form">
+      <form
+        action="https://formsubmit.co/nikola26rakocevic@gmail.com"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <div class="form__box">
+          <h3>Contact Information</h3>
+          <ul class="form__list">
+            <input type="hidden" name="_subject" value="New recruiter!" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://fearsomeeverecruiting.com/pages/thankyou.html"
+            />
+            <li class="form__item">
+              <label for="firstname"> First Name</label>
+              <input type="text" name="name" required />
+            </li>
+            <li class="form__item">
+              <label for="lastname"> Last Name</label>
+              <input type="text" name="lastname" required />
+            </li>
+            <li class="form__item">
+              <label for="address">Address</label>
+              <input type="text" name="address" required />
+            </li>
+            <li class="form__item">
+              <label for="city">City</label>
+              <input type="text" name="city" required />
+            </li>
+            <li class="form__item">
+              <label for="state">State</label>
+              <select class="option option__state" name="state" required>
+                <option name="alabama">Alabama</option>
+                <option name="alaska">Alaska</option>
+                <option name="arizona">Arizona</option>
+                <option name="Arkansas">Arkansas</option>
+                <option name="California">California</option>
+                <option name="Colorado">Colorado</option>
+                <option name="Connecticut">Connecticut</option>
+                <option name="Delaware">Delaware</option>
+                <option name="Florida">Florida</option>
+                <option name="Georgia">Georgia</option>
+                <option name="Hawaii">Hawaii</option>
+                <option name="Idaho">Idaho</option>
+                <option name="Illinois">Illinois</option>
+                <option name="Indiana">Indiana</option>
+                <option name="Iowa">Iowa</option>
+                <option name="Kansas">Kansas</option>
+                <option name="Kentucky">Kentucky</option>
+                <option name="Louisiana">Louisiana</option>
+                <option name="Maine">Maine</option>
+                <option name="Maryland">Maryland</option>
+                <option name="Massachusetts">Massachusetts</option>
+                <option name="Michigan">Michigan</option>
+                <option name="Minnesota">Minnesota</option>
+                <option name="Mississippi">Mississippi</option>
+                <option name="Missouri">Missouri</option>
+                <option name="Montana">Montana</option>
+                <option name="Nebraska">Nebraska</option>
+                <option name="Nevada">Nevada</option>
+                <option name="New Hampshire">New Hampshire</option>
+                <option name="New Jersey">New Jersey</option>
+                <option name="New Mexico">New Mexico</option>
+                <option name="New York">New York</option>
+                <option name="North Carolina">North Carolina</option>
+                <option name="North Dakota">North Dakota</option>
+                <option name="Ohio">Ohio</option>
+                <option name="Oklahoma">Oklahoma</option>
+                <option name="Oregon">Oregon</option>
+                <option name="Pennsylvania">Pennsylvania</option>
+                <option name="Rhode Island">Rhode Island</option>
+                <option name="South Carolina">South Carolina</option>
+                <option name="South Dakota">South Dakota</option>
+                <option name="Tennessee">Tennessee</option>
+                <option name="Texas">Texas</option>
+                <option name="Utah">Utah</option>
+                <option name="Vermont">Vermont</option>
+                <option name="Virginia">Virginia</option>
+                <option name="Washington">Washington</option>
+                <option name="West Virginia">West Virginia</option>
+                <option name="Wisconsin">Wisconsin</option>
+                <option name="Wyoming">Wyoming</option>
+              </select>
+            </li>
+            <li class="form__item">
+              <label for="zip">Zip</label>
+              <input type="number" name="zip" required />
+            </li>
+            <li class="form__item">
+              <label for="phone">Phone Number</label>
+              <input type="tel" name="phone" required />
+            </li>
+            <li class="form__item">
+              <label for="email">E-mail Address</label>
+              <input type="email" name="email" />
+            </li>
+            <li class="form__item">
+              <label for="file"
+                ><span>Upload your CDL(front and back) and Medical card</span>
+                <br /><span>(Please upload up to 2 MB JPEG, PNG)</span></label
+              >
+
+              <input
+                type="file"
+                name="myfile"
+                accept="image/png, image/jpeg"
+                multiple="multiple"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <div class="form__box">
+          <h3>CDL Information</h3>
+          <ul class="form__list">
+            <li class="form__item">
+              <label for="type">Driver Type</label>
+              <select class="option option__type" name="type" required>
+                <option name="Company Truck Driver">Solo Driver</option>
+                <option name="Study Truck Driver">Team Driver</option>
+                <option name="Owner Operator">Owner Operator</option>
+              </select>
+            </li>
+            <li class="form__item">
+              <label for="expyears">Years of driving experience</label>
+              <input type="number" name="expyears" required />
+            </li>
+            <li class="form__item">
+              <label for="cdlnumber">CDL Number</label>
+              <input type="number" name="cdlnumber" required />
+            </li>
+            <li class="form__item">
+              <label for="cdlclass">CDL Class</label>
+              <select class="option option__class" name="cdlclass" required>
+                <option name="A">A</option>
+                <option name="B">B</option>
+                <option name="C">C</option>
+              </select>
+            </li>
+            <li class="form__item">
+              <label for="cdlstate">State of CDL Issue</label>
+              <select class="option option__state" name="cdlstate" required>
+                <option name="alabama">Alabama</option>
+                <option name="alaska">Alaska</option>
+                <option name="arizona">Arizona</option>
+                <option name="Arkansas">Arkansas</option>
+                <option name="California">California</option>
+                <option name="Colorado">Colorado</option>
+                <option name="Connecticut">Connecticut</option>
+                <option name="Delaware">Delaware</option>
+                <option name="Florida">Florida</option>
+                <option name="Georgia">Georgia</option>
+                <option name="Hawaii">Hawaii</option>
+                <option name="Idaho">Idaho</option>
+                <option name="Illinois">Illinois</option>
+                <option name="Indiana">Indiana</option>
+                <option name="Iowa">Iowa</option>
+                <option name="Kansas">Kansas</option>
+                <option name="Kentucky">Kentucky</option>
+                <option name="Louisiana">Louisiana</option>
+                <option name="Maine">Maine</option>
+                <option name="Maryland">Maryland</option>
+                <option name="Massachusetts">Massachusetts</option>
+                <option name="Michigan">Michigan</option>
+                <option name="Minnesota">Minnesota</option>
+                <option name="Mississippi">Mississippi</option>
+                <option name="Missouri">Missouri</option>
+                <option name="Montana">Montana</option>
+                <option name="Nebraska">Nebraska</option>
+                <option name="Nevada">Nevada</option>
+                <option name="New Hampshire">New Hampshire</option>
+                <option name="New Jersey">New Jersey</option>
+                <option name="New Mexico">New Mexico</option>
+                <option name="New York">New York</option>
+                <option name="North Carolina">North Carolina</option>
+                <option name="North Dakota">North Dakota</option>
+                <option name="Ohio">Ohio</option>
+                <option name="Oklahoma">Oklahoma</option>
+                <option name="Oregon">Oregon</option>
+                <option name="Pennsylvania">Pennsylvania</option>
+                <option name="Rhode Island">Rhode Island</option>
+                <option name="South Carolina">South Carolina</option>
+                <option name="South Dakota">South Dakota</option>
+                <option name="Tennessee">Tennessee</option>
+                <option name="Texas">Texas</option>
+                <option name="Utah">Utah</option>
+                <option name="Vermont">Vermont</option>
+                <option name="Virginia">Virginia</option>
+                <option name="Washington">Washington</option>
+                <option name="West Virginia">West Virginia</option>
+                <option name="Wisconsin">Wisconsin</option>
+                <option name="Wyoming">Wyoming</option>
+              </select>
+            </li>
+            <li class="form__item">
+              <label for="expiration">Expiration Date</label>
+              <input type="date" name="expiration" />
+            </li>
+
+            <li class="form__item">
+              <label for="trailer">Type Trailer</label>
+              <select class="option option__type" name="trailer" required>
+                <option name="Company Truck Driver">Dry Van</option>
+                <option name="Study Truck Driver">Flatbed</option>
+                <option name="Owner Operator">Reefer</option>
+              </select>
+            </li>
+            <li class="form__item">
+              <label for="employed">Currently Employed</label>
+              <select class="option" name="employed" required>
+                <option name="Yes">Yes</option>
+                <option name="No">No</option>
+              </select>
+            </li>
+            <li class="form__item">
+              <label for="message">Comments</label>
+
+              <textarea
+                class="option option__message"
+                name="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </li>
+          </ul>
+        </div>
+        <!-- <input type="submit" name="send"> -->
+
+        <button class="submit" name="submit">Applay Now</button>
+      </form>
+    </section>
+
+    <div class="footer">
+      <div class="footer__contact">
+        <img class="footer__logo" src="img/logo.png" alt="logo-FLegacy" />
+        <i class="fa-solid fa-phone"></i>
+        <h4>Phone: (+342)222-333-444</h4>
+
+        <i class="fa-solid fa-envelope"></i>
+        <a href="">email@gmail.com</a>
+        <!-- <a
+          href="https://www.google.com/maps?ll=41.833733,-87.731964&z=6&t=m&hl=sr&gl=RS&mapclient=embed&q=%D0%A7%D0%B8%D0%BA%D0%B0%D0%B3%D0%BE+%D0%98%D0%BB%D0%B8%D0%BD%D0%BE%D0%B8%D1%81+%D0%A1%D1%98%D0%B5%D0%B4%D0%B8%D1%9A%D0%B5%D0%BD%D0%B5+%D0%94%D1%80%D0%B6%D0%B0%D0%B2%D0%B5"
+        >
+          <i class="fa-solid fa-location-dot"></i>
+        </a>
+        <p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3063827.0596949523!2d-90.20965938446605!3d41.652972214436005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2z0KfQuNC60LDQs9C-LCDQmNC70LjQvdC-0LjRgSwg0KHRmNC10LTQuNGa0LXQvdC1INCU0YDQttCw0LLQtQ!5e0!3m2!1ssr!2srs!4v1657345939275!5m2!1ssr!2srs"
+            width="300"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </p> -->
+        <div class="footer__social-network">
+          <a href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__form">
+        <h3>Contact Us</h3>
+
+        <input
+          type="text"
+          class="first-name"
+          name="fname"
+          placeholder="First name"
+        /><br />
+
+        <input
+          type="text"
+          class="last-name"
+          name="fname"
+          placeholder="Last name"
+        /><br />
+
+        <input
+          type="email"
+          class="email"
+          name="fname"
+          placeholder="Email"
+        /><br />
+        <textarea
+          class="message"
+          name="message"
+          rows="10"
+          cols="30"
+          placeholder=" Message"
+          required
+        ></textarea>
+        <button class="footer__form-button">Submit</button>
+      </div>
+    </div>
+
+    <a class="side__button" href="#">Apply now</a>
+
+    <div class="social__network-right__side">
+      <a href="#">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
